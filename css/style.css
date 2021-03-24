@@ -1,0 +1,464 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "KayakSans";
+  src: url("../fonts/Kayak Sans Bold.eot");
+  src: local("☺"), url("../fonts/Kayak Sans Bold.woff") format("woff"), url("../fonts/Kayak Sans Bold.ttf") format("truetype"), url("../fonts/Kayak Sans Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KayakSans";
+  src: url("../fonts/Kayak Sans Light.eot");
+  src: local("☺"), url("../fonts/Kayak Sans Light.woff") format("woff"), url("../fonts/Kayak Sans Light.ttf") format("truetype"), url("../fonts/Kayak Sans Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KayakSans";
+  src: url("../fonts/Kayak Sans Regular.eot");
+  src: local("☺"), url("../fonts/Kayak Sans Regular.woff") format("woff"), url("../fonts/Kayak Sans Regular.ttf") format("truetype"), url("../fonts/Kayak Sans Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("../fonts/ofont.ru_Proxima Nova.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Proxima Nova.woff") format("woff"), url("../fonts/ofont.ru_Proxima Nova.ttf") format("truetype"), url("../fonts/ofont.ru_Proxima Nova.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "KayakSans";
+}
+
+.header {
+  max-width: 1570px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  background: url("../img/bkgheader/bgheader.png") 100% 0/100% auto no-repeat, url("../img/bgall.png") 100% 150%/100% 120% no-repeat;
+}
+.button-signUp-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-signUp {
+  margin: 5% 5% 0px 0px;
+}
+
+.signUp {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 20px 54px;
+  border-radius: 15px;
+  background-color: #6ece0f;
+}
+
+.page-love {
+  margin: 0 auto;
+  padding: 2% 0px 0px 5%;
+}
+.page-love__text {
+  margin: 0 auto;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+}
+.page-love__text p {
+  opacity: 0.8;
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.page-love__text span {
+  color: #5fb709;
+}
+.page-love__button a {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 54px;
+  border-radius: 15px;
+  background-color: #6ece0f;
+}
+
+.page-findfood {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  padding: 5% 0;
+  z-index: 1;
+}
+
+.findfood {
+  max-width: 1390px;
+  min-height: 650px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 27% 0px 10%;
+  padding: 0px 15px;
+  text-align: left;
+  background: url("../img/findfood/burger.png") 50% 0/100% auto no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.findfood__content {
+  padding: 15% 0px 0px 0px;
+}
+.findfood__text {
+  padding: 0px 0px 35px 0px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.findfood__text span {
+  color: #5fb709;
+}
+.findfood__form {
+  display: flex;
+}
+.findfood__input {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 0px;
+}
+.findfood__input .input {
+  width: 99%;
+  height: 70px;
+  border: 1px solid #abaaaa;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0px 28px;
+  color: #585858;
+  font-size: 20px;
+  font-weight: 400;
+}
+.findfood__input .input.focus {
+  color: black;
+}
+.findfood__button {
+  flex: 0 0 200px;
+}
+.findfood__btn {
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: #5fb709;
+}
+
+.favourites {
+  max-width: 1570px;
+  min-height: 1000px;
+  margin: 0 auto;
+  padding: 10% 15px;
+  background: url("../img/favourites/favouritesAll1.png") 100% 50%/100% auto no-repeat, url("../img/bgall.png") 100% 0/100% 100% no-repeat;
+  position: relative;
+  z-index: 2;
+  top: -20%;
+}
+
+.page-favourites {
+  margin: 0 auto;
+  padding: 15% 0px 0px 5%;
+}
+.page-favourites__text {
+  margin: 0 auto;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: left;
+}
+.page-favourites__text p {
+  opacity: 0.8;
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.page-favourites__text span {
+  color: #5fb709;
+}
+.page-favourites__button a {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 20px 54px;
+  border-radius: 15px;
+  background-color: #6ece0f;
+}
+
+.uber {
+  max-width: 1570px;
+  min-height: 650px;
+  margin: 0 auto;
+  padding: 17% 20% 0px 0px;
+  background: url("../img/uber/9-layers.png") 100% 0/100% auto no-repeat;
+  position: relative;
+  z-index: 1;
+  top: -20%;
+}
+
+.page-uber__text {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 0px 35px 0px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.page-uber__text span {
+  color: #5fb709;
+}
+.page-uber__form {
+  display: flex;
+}
+
+.restaurant {
+  max-width: 1570px;
+  min-height: 1000px;
+  margin: 0 auto;
+  padding: 10% 15px;
+  background: url("../img/restaurant/restaurant.png") 100% 50%/100% auto no-repeat, url("../img/bgall.png") 100% 0/100% 100% no-repeat;
+  position: relative;
+  z-index: 2;
+  top: -30%;
+}
+
+.page-restaurant__text {
+  display: flex;
+  justify-content: flex-start;
+  padding: 17% 0px 0px 8%;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.page-restaurant__text span {
+  color: #5fb709;
+}
+.page-restaurant__form {
+  display: flex;
+}
+
+.app {
+  max-width: 1570px;
+  min-height: 800px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 13% 10% 0px 0px;
+  background: url("../img/app/8-layers.png") 100% 50%/100% auto no-repeat;
+  position: relative;
+  z-index: 1;
+  top: -40%;
+}
+
+.app-conteiner {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+  padding: 5% 0;
+}
+.app-conteiner__item {
+  display: flex;
+  width: 650px;
+  height: 350px;
+  flex-wrap: wrap;
+}
+
+.app-button__text {
+  padding: 0px 0px 0px 7%;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.app-button__text span {
+  color: #5fb709;
+}
+.app-button__appstore {
+  padding: 0px 0px 0px 7%;
+}
+
+.deliver {
+  max-width: 1570px;
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 13% 10% 0px 0px;
+  background: url("../img/bgall.png") 100% 0/100% 100% no-repeat;
+  position: relative;
+  z-index: 2;
+  top: -40%;
+}
+
+.deliver-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  padding: 5% 0px 0px 18%;
+  width: 800px;
+  height: 350px;
+  flex-wrap: wrap;
+}
+.deliver-container__itemleft {
+  flex-direction: column;
+  padding: 0px 50px 0px 0px;
+  display: flex;
+  width: 420px;
+  height: 400px;
+  flex-wrap: wrap;
+}
+.deliver-container__itemright {
+  flex-direction: column;
+  width: 455px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 1px solid black;
+  padding: 0px 0px 0px 50px;
+}
+
+.deliver-restaurant__img {
+  padding: 0px 0px 15px 0px;
+}
+.deliver-restaurant__title {
+  color: #5fb709;
+  font-family: "KayakSans";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+.deliver-restaurant__subtitel {
+  padding: 20px 0px 0px 0px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.deliver-restaurant__btn {
+  padding: 50px 0px 0px 0px;
+}
+.deliver-restaurant__btn a {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  padding: 20px 54px;
+  border-radius: 15px;
+  background-color: #6ece0f;
+}
+
+.deliver-eats__img {
+  padding: 0px 0px 15px 0px;
+}
+.deliver-eats__title {
+  color: #5fb709;
+  font-family: "KayakSans";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+.deliver-eats__subtitel {
+  padding: 20px 0px 0px 0px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.deliver-eats__btn {
+  padding: 50px 0px 0px 0px;
+}
+.deliver-eats__btn a {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 700;
+  padding: 20px 54px;
+  border-radius: 15px;
+  background-color: #6ece0f;
+}
