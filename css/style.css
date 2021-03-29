@@ -100,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "KayakSans";
 }
@@ -967,7 +971,7 @@ body {
   background-color: #262626;
   position: relative;
   z-index: 3;
-  top: -57%;
+  top: -63%;
 }
 @media (max-width: 768px) {
   .footer {

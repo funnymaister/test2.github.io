@@ -1,7 +1,9 @@
 @import "_fonts.scss";
 @import "_nullstyle.scss";
 
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'KayakSans';
 }
@@ -768,7 +770,7 @@ body {
 	background-color: #262626;
 	position: relative;
 	z-index: 3;
-	top: -57%;
+	top: -63%;
 		@media (max-width:768px){
 			min-height: 120px;
 			padding: 10px 0px 0px 0px;
