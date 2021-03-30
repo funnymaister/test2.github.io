@@ -571,9 +571,8 @@ body {
 .app {
 	max-width: 1570px;
 	min-height: 800px;
-	display: flex;
-	justify-content: flex-end;
 	margin: 0 auto;
+	padding: 270px 0px 0px 0px;
 	background: url('../img/app/8-layers.png') 0 50%/100% auto no-repeat;
 	position: relative;
 	z-index: 1;
@@ -587,64 +586,71 @@ body {
 			background: url('../img/app/8-layers.png') 0 50%/100% auto no-repeat;
 			padding: 0px 0px 0px 0px;
 		}
+		@media (max-width:375px){
+			background: url('../img/app/8-layers.png') 70% 50%/120% auto no-repeat;
+		}
 }
 .app-conteiner {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	flex: 0 1 auto;
-	margin: 0 5px 0 0;
-	padding: 270px 0px 0px 0px;
+	margin: 0 auto;
+	max-width: 700px;
+	min-height: 250px;
 		@media (max-width:768px){
 			justify-content: center;
-			padding: 0px 0px 0px 0px;
+			padding: 180px 0px 0px 0px;
+		}
+		@media (max-width:425px){
+			justify-content: center;
+			padding: 70px 0px 0px 0px;
 		}
 
 		&__item {
-			display:flex;
-			width: 650px;
-			height: 350px;
-			flex-wrap:wrap;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0px 0px 0px 150px;
 				@media (max-width:768px){
-					width: 350px;
+					width: 500px;
 				}
 				@media (max-width:425px){
 					width: 250px;
+					padding: 0px 0px 20px 100px;
 				}
 		}
 }
 .app-button {
 	
-
 		&__uber {
+			max-width: 120px;
 				@media (max-width:768px){
 				img {
-					width: 70px;
-					margin: 100px 0px 0px 0px;
+					max-width: 70px;
+					margin: 0px 0px 20px 0px;
 				}
 				}
 				@media (max-width:425px){
 					img {
 						width: 45px;
-						margin: 140px 0px 0px 0px;
+						margin: 0px 0px 5px 0px;
+						// margin: 140px 0px 0px 0px;
 					}
 					}
 		}
 
 		&__text {
-			padding: 0px 0px 0px 7%;
 			color: #000000;
 			font-size: 40px;
 			font-weight: 700;
 			line-height: 50px;
+			max-width: 400px;
 				@media (max-width:768px){
 					font-size: 27px;
 					line-height: 25px;
-					margin: 100px 0px 0px 0px;
 				}
 				@media (max-width:425px){
-					font-size: 20px;
+					font-size: 15px;
 					line-height: 20px;
-					margin: 140px 0px 0px 0px;
 				}
 		}
 		&__text span {
@@ -652,34 +658,29 @@ body {
 		}
 
 		&__google {
+			max-width: 210px;
 			@media (max-width:768px){
 				img {
 					width: 150px;
-					margin: 0px 0px 100px 0px;
 				}
 				}
 				@media (max-width:425px){
 					img {
 						width: 100px;
-						margin: 0px 0px 100px 0px;
 					}
 					}
 		}
 
 		&__appstore {
-			padding: 0px 0px 0px 7%;
+			max-width: 210px;
 			@media (max-width:768px){
-				padding: 0px 0px 0px 10px;
 				img {
 					width: 150px;
-					margin: 0px 0px 100px 0px;
 				}
 				}
 				@media (max-width:425px){
-					padding: 0px 0px 0px 10px;
 					img {
 						width: 100px;
-						margin: 0px 0px 100px 0px;
 					}
 					}
 		}

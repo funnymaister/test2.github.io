@@ -776,9 +776,8 @@ body {
 .app {
   max-width: 1570px;
   min-height: 800px;
-  display: flex;
-  justify-content: flex-end;
   margin: 0 auto;
+  padding: 270px 0px 0px 0px;
   background: url("../img/app/8-layers.png") 0 50%/100% auto no-repeat;
   position: relative;
   z-index: 1;
@@ -797,104 +796,110 @@ body {
     padding: 0px 0px 0px 0px;
   }
 }
+@media (max-width: 375px) {
+  .app {
+    background: url("../img/app/8-layers.png") 70% 50%/120% auto no-repeat;
+  }
+}
 
 .app-conteiner {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   flex: 0 1 auto;
-  margin: 0 5px 0 0;
-  padding: 270px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 250px;
 }
 @media (max-width: 768px) {
   .app-conteiner {
     justify-content: center;
-    padding: 0px 0px 0px 0px;
+    padding: 180px 0px 0px 0px;
+  }
+}
+@media (max-width: 425px) {
+  .app-conteiner {
+    justify-content: center;
+    padding: 70px 0px 0px 0px;
   }
 }
 .app-conteiner__item {
   display: flex;
-  width: 650px;
-  height: 350px;
   flex-wrap: wrap;
+  padding: 0px 0px 0px 150px;
 }
 @media (max-width: 768px) {
   .app-conteiner__item {
-    width: 350px;
+    width: 500px;
   }
 }
 @media (max-width: 425px) {
   .app-conteiner__item {
     width: 250px;
+    padding: 0px 0px 20px 100px;
   }
 }
 
+.app-button__uber {
+  max-width: 120px;
+}
 @media (max-width: 768px) {
   .app-button__uber img {
-    width: 70px;
-    margin: 100px 0px 0px 0px;
+    max-width: 70px;
+    margin: 0px 0px 20px 0px;
   }
 }
 @media (max-width: 425px) {
   .app-button__uber img {
     width: 45px;
-    margin: 140px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
   }
 }
 .app-button__text {
-  padding: 0px 0px 0px 7%;
   color: #000000;
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
+  max-width: 400px;
 }
 @media (max-width: 768px) {
   .app-button__text {
     font-size: 27px;
     line-height: 25px;
-    margin: 100px 0px 0px 0px;
   }
 }
 @media (max-width: 425px) {
   .app-button__text {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 20px;
-    margin: 140px 0px 0px 0px;
   }
 }
 .app-button__text span {
   color: #5fb709;
 }
+.app-button__google {
+  max-width: 210px;
+}
 @media (max-width: 768px) {
   .app-button__google img {
     width: 150px;
-    margin: 0px 0px 100px 0px;
   }
 }
 @media (max-width: 425px) {
   .app-button__google img {
     width: 100px;
-    margin: 0px 0px 100px 0px;
   }
 }
 .app-button__appstore {
-  padding: 0px 0px 0px 7%;
+  max-width: 210px;
 }
 @media (max-width: 768px) {
-  .app-button__appstore {
-    padding: 0px 0px 0px 10px;
-  }
   .app-button__appstore img {
     width: 150px;
-    margin: 0px 0px 100px 0px;
   }
 }
 @media (max-width: 425px) {
-  .app-button__appstore {
-    padding: 0px 0px 0px 10px;
-  }
   .app-button__appstore img {
     width: 100px;
-    margin: 0px 0px 100px 0px;
   }
 }
 
